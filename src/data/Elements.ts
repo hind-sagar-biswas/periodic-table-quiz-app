@@ -27,6 +27,7 @@ export interface ElementInterface {
     SpecificHeat: string | null,
     NumberofShells: number | null,
     NumberofValence: number | null,
+    [key: string]: any
 }
 
 export const Elements: ElementInterface[] = [

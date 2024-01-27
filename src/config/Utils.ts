@@ -7,6 +7,12 @@ export interface Score {
     percent: number
 }
 
+export interface Question {
+    question: string,
+    correctAns: string|number|null,
+    options: (string | number | null)[]
+}
+
 export function shuffleArray(array: unknown[]) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -14,7 +20,7 @@ export function shuffleArray(array: unknown[]) {
     }
 }
 
-export function selectRandomItem(array: unknown[]) {
+export function selectRandomItem(array: unknown[]): any {
     const randomIndex: number = Math.floor(Math.random() * array.length);
     return array[randomIndex];
 }

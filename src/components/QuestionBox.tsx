@@ -7,19 +7,20 @@ import {
 } from "react-native";
 import BaseStyle from "../config/BaseStyle";
 import Colors from "../config/Colors";
+import { Question } from "../config/Utils";
 
 const { width } = Dimensions.get("window");
 
 interface Props {
-    questionObj,
-    number,
-    selected,
-    select
+    questionObj: Question,
+    number: number,
+    selected: [string|number|null, boolean],
+    select: (id: number) => void
 }
 
 export default function QuestionBox({ questionObj, number, selected, select }: Props) {
 
-    function getOptionBox(option, id: number) {
+    function getOptionBox(option: string | number | null, id: number) {
         if (selected[0] === null) return (
             <TouchableOpacity key={id} onPress={() => select(id)}>
                 <Text style={styles.option}>{option || 'None'}</Text>
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
     },
     optionBox: {
         flex: 1,
-        alignItems: "strech",
+        alignItems: "stretch",
         justifyContent: "space-between",
         gap: 10,
         width: width - 70,

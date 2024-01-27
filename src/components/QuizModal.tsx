@@ -7,11 +7,11 @@ import { ElementInterface } from "../data/Elements";
 
 interface Props {
     visible: boolean,
-    setModalVisible,
-    next,
+    setModalVisible: React.Dispatch<React.SetStateAction<boolean>>,
+    next: () => void,
     element: ElementInterface,
     evaluation: boolean,
-    correctAns,
+    correctAns: any,
 }
 
 export default function QuizModal({
