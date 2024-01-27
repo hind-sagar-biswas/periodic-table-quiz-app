@@ -1,0 +1,27 @@
+export default {
+    primary: "#e91e63",
+    secondary: "#9c27b0",
+    success: "#1de9b6",
+    danger: "#f44336",
+    dark: {
+        lightest: "#333",
+        lighter: "#222",
+        main: "#111",
+        darker: "#151515",
+    },
+    light: "#fefefe",
+    elementType: {
+        Actinide: "#ffa726",
+        Halogen: '#e3d026',
+        Lanthanide: "#03a9f4",
+        Metalloid: "#ffc107",
+        Metal: "#eeeeee",
+        Nonmetal: "#00bcd4",
+        Transactinide: "#90a4ae",
+        "Alkali Metal": "#26a69a",
+        "Alkaline Earth Metal": "#e91e63",
+        "Noble Gas": "#8d6e63",
+        "Post-transition metal": "#5c6bc0",
+        "Transition Metal": "#7e57c2",
+    },
+};
