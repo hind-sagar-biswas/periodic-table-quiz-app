@@ -17,8 +17,7 @@ export default function useLoadHighScore(): [boolean, Score, React.Dispatch<Reac
                 percent: 0,
             };
         }
-
-        console.log(data);
+        
         setHighScore(data);
         setLoading(false);
     }, []);

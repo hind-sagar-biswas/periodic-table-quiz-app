@@ -30,7 +30,6 @@ export default function HighScore() {
             };
         }
 
-        console.log(data);
         setHighScore(data);
         setLoading(false);
     }, []);
