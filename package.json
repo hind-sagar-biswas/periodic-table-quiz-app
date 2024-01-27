@@ -1,7 +1,8 @@
 {
-  "name": "ptquiz",
+  "name": "periodic-table-quiz-app",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
+  "description": "A quiz app to practice and memorize Periodic Table Elements and their properties",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",

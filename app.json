@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "PTQuiz",
-    "slug": "PTQuiz",
+    "name": "periodic-table-quiz-app",
+    "slug": "periodic-table-quiz-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/identity/icon.png",

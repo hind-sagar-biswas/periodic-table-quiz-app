@@ -16,14 +16,14 @@ import { QuizContext, QuizContextInterface } from "./src/contexts/QuizContext";
 
 const questionFields: string[] = [
   "AtomicNumber",
-  "Element",
+  "Name",
   "Symbol",
   "AtomicMass",
   "Period:Group",
 ];
 const fields: [string, boolean][] = [
   ["AtomicNumber", true],
-  ["Element", true],
+  ["Name", true],
   ["Symbol", true],
   ["AtomicMass", true],
   ["NumberofNeutrons", false],
