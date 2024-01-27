@@ -1,6 +1,12 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import appJson from "./../../app.json";
 
+export interface Score {
+    total: number,
+    correct: number,
+    percent: number
+}
+
 export function shuffleArray(array: unknown[]) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -20,8 +26,8 @@ export function getPercentage(total: number, correct: number): number {
 
 export async function storeDataObject(
     key: string,
-    data: unknown,
-    onSuccess = async (data: unknown) => { },
+    data: any,
+    onSuccess = async (data: any) => { },
     onFail = async (error: unknown) => { }
 ) {
     try {
@@ -37,7 +43,7 @@ export async function storeDataObject(
 
 export async function retrieveDataObject(
     key: string,
-    onSuccess = async (data: unknown) => { },
+    onSuccess = async (data: any) => { },
     onFail = async (error: unknown) => { }
 ) {
     try {
