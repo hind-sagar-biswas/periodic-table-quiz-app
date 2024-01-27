@@ -15,7 +15,7 @@ export default function ScoreBoard({ score }: Props) {
     useEffect(() => {
         if (!loading) {
             if (highScore.correct < score.correct) {
-                storeDataObject("highScore", score, (data) => setHighScore(data));
+                storeDataObject("highScore", score, async (data) => setHighScore(data));
             }
         }
     }, [score, loading, highScore]);
